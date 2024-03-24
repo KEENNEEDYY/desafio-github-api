@@ -1,0 +1,24 @@
+.gitapi-headerbar {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 60px;
+    background-color: var(--theme-color-bg-blue);
+}
+
+.gitapi-headerbar h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--theme-color-font-white);
+}
+
+
+@media (min-width:1400px) {
+    .gitapi-headerbar {
+        padding-left: 40px;
+    }
+
+    .gitapi-headerbar h1 {
+        font-size: 24px;
+    }
+}
