@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
-    height: 60px;
+    height: 40px;
     background-color: var(--theme-color-bg-blue);
 }
 
@@ -16,6 +16,7 @@
 @media (min-width:1400px) {
     .gitapi-headerbar {
         padding-left: 40px;
+        height: 60px;
     }
 
     .gitapi-headerbar h1 {

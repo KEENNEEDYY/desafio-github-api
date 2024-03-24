@@ -35,3 +35,9 @@ body {
 main {
   padding: 0 20px;
 }
+
+@media (min-width: 1400px) {
+  main {
+    padding: 40px;
+  }
+}

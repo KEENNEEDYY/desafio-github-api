@@ -1,0 +1,49 @@
+.gitapi-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color-bg-blue);
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.gitapi-button-container h5 {
+    color: var(--theme-color-font-white);
+    font-size: 8px;
+    font-weight: 400;
+}
+
+@media (min-width:576px) {
+    .gitapi-button-container {
+        width: 80px;
+        height: 28px;
+    }
+
+    .gitapi-button-container h5 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1200px) {
+    .gitapi-button-container {
+        width: 120px;
+        height: 32px;
+    }
+
+    .gitapi-button-container h5 {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width:1400px) {
+    .gitapi-button-container {
+        width: 150px;
+        height: 40px;
+    }
+
+    .gitapi-button-container h5 {
+        font-size: 24px;
+    }
+}
