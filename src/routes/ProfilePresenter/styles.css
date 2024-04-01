@@ -1,0 +1,38 @@
+.gitapi-profile-presenter-container {
+    margin: 10px 0px;
+    padding: 5px 5px;
+    background-color: var(--theme-color-bg-card-one);
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.gitapi-profile-presenter-container h1 {
+    color: var(--theme-color-font-black);
+    font-size: 16px;
+}
+
+.gitapi-profile-presenter-container input {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    max-width: 250px;
+    max-height: 24px;
+    height: 15px;
+    width: 100px;
+}
+
+.gitapi-profile-presenter-container input::placeholder {
+    color: var(--theme-color-font-placeholder);
+    font-size: 8px;
+}
+
+
+@media (min-width:1400px) {
+    .gitapi-profile-presenter-container {
+        margin: auto 30px;
+        padding: 50px 30px;
+    }
+}

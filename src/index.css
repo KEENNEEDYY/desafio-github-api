@@ -9,6 +9,7 @@
   --theme-color-font-black: #262626;
   --theme-color-font-gray-one: #BFBFBF;
   --theme-color-font-gray-two: #7E7E7E;
+  --theme-color-font-gray-three: #737373;
   --theme-color-font-placeholder: #5C5858;
   --theme-color-font-white: #FFFFFF;
   --theme-color-font-blue: #1890FF;
@@ -25,6 +26,16 @@ a,
 a:hover {
   text-decoration: none;
   color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0;
+  padding: 0 0;
 }
 
 html,
