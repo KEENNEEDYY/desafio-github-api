@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: var(--theme-color-bg-card-two);
     margin: 5px 5px;
+    padding: 5px 5px;
     gap: 5px;
 }
 
@@ -13,8 +14,12 @@
 }
 
 .gitapi-profile-data {
+    background-color: var(--theme-color-bg-white-two);
+    border: 1px solid var(--theme-color-border-one);
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 5px;
     padding: 5px 0;
 }
@@ -22,13 +27,21 @@
 .gitapi-profile-data h4 {
     font-size: 16px;
     color: var(--theme-color-font-blue);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 .gitapi-profile-data-item {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 95%;
+    margin-left: 10px;
     gap: 5px;
+    background-color: var(--theme-color-bg-white-two);
+    border: 1px solid var(--theme-color-border-one);
+    border-radius: 4px;
 }
 
 .gitapi-url p {
@@ -43,6 +56,7 @@
 .gitapi-profile-data-item h5 {
     font-size: 12px;
     color: var(--theme-color-font-gray-three);
+    margin-left: 10px;
 }
 
 .gitapi-profile-data-item h6 {
@@ -56,6 +70,7 @@
 @media (min-width:576px) {
     .gitapi-profile-content {
         flex-direction: row;
+        padding: 10px 10px;
         gap: 20px;
     }
 }
@@ -63,6 +78,7 @@
 @media (min-width: 1200px) {
     .gitapi-profile-content {
         margin-top: 40px;
+        padding: 40px 40px;
     }
 
     .gitapi-profile-content img {
@@ -71,7 +87,8 @@
     }
 
     .gitapi-profile-data {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 20px;
     }
 
     .gitapi-profile-data div {

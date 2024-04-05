@@ -2,9 +2,12 @@
 
 :root {
   --theme-color-bg-white: #F7F9FA;
+  --theme-color-bg-white-two: #FFFFFF;
   --theme-color-bg-blue: #1890FF;
   --theme-color-bg-card-one: #E6F7FF;
   --theme-color-bg-card-two: #F5F5F5;
+
+  --theme-color-border-one: #D9D9D9;
 
   --theme-color-font-black: #262626;
   --theme-color-font-gray-one: #BFBFBF;

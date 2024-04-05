@@ -20,7 +20,7 @@ export default function ResultCard(
             <div className="gitapi-profile-data">
                 <h4>Informações</h4>
                 <div className="gitapi-profile-data-item gitapi-url">
-                    <h5>Perfil: </h5><p>https://api.github.com/users/acenelio</p>
+                    <h5>Perfil: </h5><p><a href="https://api.github.com/users/acenelio">https://api.github.com/users/acenelio</a></p>
                 </div>
                 <div className="gitapi-profile-data-item">
                     <h5>Seguidores: </h5><h6>4379</h6>

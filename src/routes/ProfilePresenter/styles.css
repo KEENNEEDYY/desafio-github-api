@@ -19,9 +19,14 @@
     padding-left: 5px;
     padding-bottom: 2px;
     max-width: 250px;
-    max-height: 24px;
-    height: 15px;
+    max-height: 35px;
+    height: auto;
+    font-size: 12px;
     width: 100px;
+}
+
+.gitapi-profile-presenter-container input:focus {
+    box-shadow: none;
 }
 
 .gitapi-profile-presenter-container input::placeholder {
@@ -29,10 +34,43 @@
     font-size: 8px;
 }
 
+@media (min-width:576px) {
+    .gitapi-profile-presenter-container {
+        padding: 10px 10px;
+        gap: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .gitapi-profile-presenter-container {
+        height: 200px;
+        padding: 30px 30px;
+        margin-top: 20px;
+    }
+
+    .gitapi-profile-presenter-container input {
+        min-height: 25px;
+        width: 300px;
+        font-size: 24px;
+    }
+
+    .gitapi-profile-presenter-container input::placeholder {
+        font-size: 18px;
+    }
+
+    .gitapi-profile-presenter-container h1 {
+        font-size: 28px;
+    }
+}
+
 
 @media (min-width:1400px) {
     .gitapi-profile-presenter-container {
         margin: auto 30px;
         padding: 50px 30px;
+    }
+
+    .gitapi-profile-presenter-container h1 {
+        font-size: 46px;
     }
 }
