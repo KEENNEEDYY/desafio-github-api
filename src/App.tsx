@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Index />}>
           <Route index element={<Home />} />
-          <Route path='/profile' element={<ProfilePresenter />} />
+          <Route path='profile' element={<ProfilePresenter />} />
         </Route>
       </Routes>
     </BrowserRouter>
