@@ -4,7 +4,6 @@ import Button from '../../components/Button';
 import ResultCard from '../../components/ResultCard';
 import './styles.css';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
 
 type FormData = {
     search: string;
@@ -22,6 +21,7 @@ export default function ProfilePresenter() {
 
     const [formData, setFormData] = useState<FormData>({ search: '' });
     const [resultData, setResultData] = useState<ResultData>();
+    const [error, setError] = useState();
 
     function handleInputChange(event: any) {
         const value = event.target.value;
@@ -34,11 +34,12 @@ export default function ProfilePresenter() {
         axios.get(`https://api.github.com/users/${formData.search}`)
             .then(response => {
                 setResultData(response.data);
+                setError(undefined);
             })
             .catch((error) => {
-                <NavLink to={'/notfind'} />
-                console.log(error);
+                setError(error);
                 setResultData(undefined);
+                console.log(error);
             });
     }
 
@@ -56,7 +57,7 @@ export default function ProfilePresenter() {
                     />
                     <Button text="Encontrar" />
                 </form>
-                {resultData &&
+                {resultData ?
                     <ResultCard
                         name={resultData.name}
                         avatar_url={resultData.avatar_url}
@@ -64,6 +65,8 @@ export default function ProfilePresenter() {
                         location={resultData.location}
                         perfil_url={resultData.html_url}
                     />
+                    : error &&
+                    <h1>Erro ao buscar usuário</h1>
                 }
             </section>
         </main>

@@ -12,6 +12,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path='profile' element={<ProfilePresenter />} />
         </Route>
+        <Route path="/notfound" element={<h3>Não Encontrado</h3>} />
       </Routes>
     </BrowserRouter>
   );
